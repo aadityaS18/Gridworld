@@ -98,9 +98,7 @@ def train(env, episodes=500, alpha=0.1, gamma=0.95, epsilon=0.1, max_steps=100):
     return Q, rewards_per_episode
 
 
-# =====================================================================
-# 3. RESULTS: print and plot
-# =====================================================================
+# graph plot 
 def print_best_path(env, Q):
     """Follow the highest Q from the start and print the path."""
     state = env.reset()
